@@ -16,16 +16,20 @@ function cosineLaw() {
 </script>
 
 <template>
-  <form @submit.prevent="cosineLaw">  
+  <form @submit.prevent="cosineLaw">
+    
     <label>a Side Value: </label>
     <input v-model="aSide" type="number" />
+   
     <label>b Side Value: </label>
     <input v-model="bSide" type="number" />  
     <label>c Angle Value: </label>
     <input v-model="cAngle" type="number" /> 
     <label>c Side (Result): </label>
     <input v-model="cSide" type="number" readonly />
-    <input type="submit" value="Calculate" />   
+    <input type="submit" value="Calculate" />
+    
+    
   </form>
 </template>
 

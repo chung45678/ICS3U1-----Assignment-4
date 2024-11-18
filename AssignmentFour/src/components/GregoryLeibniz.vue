@@ -15,6 +15,7 @@ function findLeibniz() {
 
 <template>
   <form @submit.prevent="findLeibniz">
+
     <label>Iterations (n): </label>
     <input v-model="iterations" type="number" />
     <label>Pi Approximation (Result): </label>
