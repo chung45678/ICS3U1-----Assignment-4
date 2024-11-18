@@ -17,7 +17,7 @@ function cosineLaw() {
 
 <template>
   <form @submit.prevent="cosineLaw">
-    
+    <h2>Cosine Law</h2>
     <label>a Side Value: </label>
     <input v-model="aSide" type="number" />
    
@@ -57,20 +57,26 @@ section {
     
 }
 
+input {
+  background-color: white;
+  color:black;
+  border-radius:4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(105, 179, 240);
+    border-color: black;
+    margin: 4px;
+    
+}
+
 label {
     text-align: center;
     display: block;
     margin: 10px 0px;
 }
 
-button {
-    background-color: rgb(10, 126, 204);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
 
-}
 
 .row {
     display: flex;
@@ -85,6 +91,9 @@ label {
     font-weight: 600;
     color: black;
     text-align: left;
+}
+h2 {
+  margin-top: 0;
 }
 
 .container {

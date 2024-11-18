@@ -19,8 +19,9 @@ function asymptoteFinder() {
 </script>
 
 <template>
+  
   <form @submit.prevent="asymptoteFinder">
-    
+    <h2> Asymptote Finder</h2>
     <label>Degree of Numerator (m): </label>
     <input v-model="numerator" type="number" />
     <label>Degree of Denominator (n): </label>
@@ -32,15 +33,6 @@ function asymptoteFinder() {
 </template>
 
 <style scoped>
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: darkgray;
-
-}
 
 section {
     text-align:center;
@@ -53,6 +45,10 @@ section {
     max-width: 400px;
     
     
+}
+
+h2 {
+  margin-top: 0;
 }
 
 label {
@@ -84,7 +80,17 @@ label {
     color: black;
     text-align: left;
 }
+input {
+  background-color: white;
+  color:black;
+  border-radius:4px;
+}
 
+input[type="submit"] {
+    background-color: rgb(105, 179, 240);
+    border-color: black;
+    margin: 4px;
+}
 .container {
     display:flex;
     gap: 30px;

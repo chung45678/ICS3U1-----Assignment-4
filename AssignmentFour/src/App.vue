@@ -45,6 +45,7 @@ label {
 
 input {
   color:rgb(109, 148, 255);
+  background-color: white;
 }
 
 </style>

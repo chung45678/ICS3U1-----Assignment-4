@@ -15,7 +15,7 @@ function findLeibniz() {
 
 <template>
   <form @submit.prevent="findLeibniz">
-
+    <h2>Gregory Leibniz</h2>
     <label>Iterations (n): </label>
     <input v-model="iterations" type="number" />
     <label>Pi Approximation (Result): </label>
@@ -47,11 +47,24 @@ section {
     
     
 }
+input {
+  background-color: white;
+  color:black;
+  border-radius:4px;
+}
 
+input[type="submit"] {
+    background-color: rgb(105, 179, 240);
+    border-color: black;
+    margin: 4px;
+}
 label {
     text-align: center;
     display: block;
     margin: 10px 0px;
+}
+h2 {
+  margin-top: 0;
 }
 
 button {
