@@ -26,7 +26,7 @@ form {
 
 .app-container {
   display:flex;
-  gap: 30px;
+  gap: 31px;
   width: 1000px;
   flex-wrap: wrap;
   color: black;
